@@ -236,30 +236,47 @@
 
     <!-- Add CSS for input icons -->
     <style>
+        /* Replaced with responsive input icon styles */
         .input-icon {
             position: relative;
         }
 
         .input-icon i {
             position: absolute;
-            left: 15px;
+            left: 12px;
             top: 50%;
             transform: translateY(-50%);
             color: #007bff;
+            font-size: 16px;
+            pointer-events: none;
         }
 
         .input-icon input,
         .input-icon textarea {
-            padding-left: 40px;
+            padding-left: 42px;
+        }
+
+        @media (max-width: 575.98px) {
+            .input-icon i {
+                left: 10px;
+                font-size: 14px;
+            }
+
+            .input-icon input,
+            .input-icon textarea {
+                padding-left: 36px;
+                padding-right: 12px;
+            }
         }
     </style>
-
 
     <style>
         /* Contact Section */
         .contact-section {
             background: var(--secondary);
             font-family: var(--font-family-sans-serif);
+            padding-top: 40px;
+            padding-bottom: 40px;
         }
 
         /* Subtitle & Title */
@@ -380,6 +397,85 @@
             100% {
                 opacity: 1;
                 transform: translateX(0);
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 991.98px) {
+            .equal-card {
+                min-height: 0;
+                /* allow natural height when stacked */
+                padding: 24px;
+            }
+
+            .custom-input {
+                padding: 12px 14px;
+                margin-bottom: 14px;
+            }
+
+            .map-wrapper iframe {
+                height: 260px;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .contact-section {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            .equal-card {
+                min-height: auto;
+                padding: 16px;
+                border-radius: 12px;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            }
+
+            .custom-input {
+                padding: 10px 12px;
+            }
+
+            .custom-textarea {
+                min-height: 140px;
+            }
+
+            .custom-btn {
+                width: 100%;
+                padding: 12px;
+                border-radius: 12px;
+            }
+
+            .map-wrapper iframe {
+                height: 200px;
+            }
+
+            .social-icons a {
+                margin-right: 10px;
+            }
+
+            .contact-title,
+            .contact-subtitle {
+                text-align: center;
+            }
+
+            .equal-card .my-contact-form,
+            .contact-side-card {
+                min-height: auto;
+            }
+
+            .page-header .d-flex {
+                min-height: 160px;
+            }
+
+            /* hide back-to-top on very small screens to avoid overlap */
+            .back-to-top {
+                display: none;
+            }
+
+            /* Ensure floating buttons have space on very small devices */
+            .whatsapp-float,
+            .call-float {
+                bottom: 90px;
             }
         }
     </style>
