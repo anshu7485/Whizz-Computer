@@ -1,15 +1,38 @@
 (function ($) {
     "use strict";
+    // Initialize AOS if available
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    }
     
     // Dropdown on mouse hover
     $(document).ready(function () {
         function toggleNavbarMethod() {
             if ($(window).width() > 992) {
-                $('.navbar .dropdown').on('mouseover', function () {
-                    $('.dropdown-toggle', this).trigger('click');
-                }).on('mouseout', function () {
-                    $('.dropdown-toggle', this).trigger('click').blur();
-                });
+                // Use Bootstrap's dropdown API if available; fallback to trigger click
+                if ($.fn.dropdown) {
+                    $('.navbar .dropdown').on('mouseover', function () {
+                        var $toggle = $('.dropdown-toggle', this);
+                        // show only if not already shown
+                        if (!$toggle.parent().hasClass('show')) {
+                            $toggle.dropdown('show');
+                        }
+                    }).on('mouseout', function () {
+                        var $toggle = $('.dropdown-toggle', this);
+                        if ($toggle.parent().hasClass('show')) {
+                            $toggle.dropdown('hide');
+                        }
+                    });
+                } else {
+                    $('.navbar .dropdown').on('mouseover', function () {
+                        $('.dropdown-toggle', this).trigger('click');
+                    }).on('mouseout', function () {
+                        $('.dropdown-toggle', this).trigger('click').blur();
+                    });
+                }
             } else {
                 $('.navbar .dropdown').off('mouseover').off('mouseout');
             }

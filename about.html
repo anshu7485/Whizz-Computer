@@ -21,13 +21,19 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
+    <!-- Animate.css (for on-load/explicit animations) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Topbar Start -->
-    <div class="container-fluid d-none d-lg-block">
+    <div class="container-fluid d-none d-lg-block animate__animated animate__slideInDown" data-aos="fade-down">
         <div class="row align-items-center py-4 px-xl-5">
             <div class="col-lg-3">
                 <a href="" class="text-decoration-none">
@@ -67,7 +73,7 @@
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid">
+    <div class="container-fluid animate__animated animate__fadeInDown" data-aos="fade-down">
         <div class="row border-top px-xl-5">
             <div class="col-lg-3 d-none d-lg-block">
                 <a class="d-flex align-items-center justify-content-between bg-secondary w-100 text-decoration-none"
@@ -79,7 +85,7 @@
                     id="navbar-vertical" style="width: calc(100% - 30px); z-index: 9;">
                     <div class="navbar-nav w-100">
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link" data-toggle="dropdown">Computer Course <i
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Computer Course <i
                                     class="fa fa-angle-down float-right mt-1"></i></a>
                             <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
                                 <a href="" class="dropdown-item">Basic Excel</a>
@@ -124,7 +130,7 @@
 
 
     <!-- Header Start -->
-    <div class="container-fluid page-header" style="margin-bottom: 90px;">
+    <div class="container-fluid page-header" style="margin-bottom: 90px;" data-aos="fade-up">
         <div class="container">
             <div class="d-flex flex-column justify-content-center" style="min-height: 300px">
                 <h3 class="display-4 text-white text-uppercase">About</h3>
@@ -143,10 +149,10 @@
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="row align-items-center">
-                <div class="col-lg-5">
-                    <img class="img-fluid rounded mb-4 mb-lg-0" src="img/about.jpg" alt="">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <img class="img-fluid rounded mb-4 mb-lg-0 animate__animated animate__zoomIn" src="img/about.jpg" alt="">
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-7" data-aos="fade-left">
                     <div class="text-left mb-4">
                         <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">About Us</h5>
                         <h1>Innovative Way To Learn</h1>
@@ -161,10 +167,10 @@
 
 
     <!-- Registration Start -->
-    <div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
+    <div class="container-fluid bg-registration py-5" style="margin: 90px 0;" data-aos="zoom-in">
         <div class="container py-5">
             <div class="row align-items-center">
-                <div class="col-lg-7 mb-5 mb-lg-0">
+                <div class="col-lg-7 mb-5 mb-lg-0" data-aos="fade-right">
                     <div class="mb-4">
                         <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Need Any Courses</h5>
                         <h1 class="text-white">30% Off For New Students</h1>
@@ -178,7 +184,7 @@
                         <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Diam dolor diam elitripsum vero.</li>
                     </ul>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-left">
                     <div class="card border-0">
                         <div class="card-header bg-light text-center p-4">
                             <h1 class="m-0">Sign Up Now</h1>
@@ -213,7 +219,7 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" data-aos="fade-up">
         <div class="container py-5">
             <div class="text-center mb-5">
                 <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Testimonial</h5>
@@ -252,7 +258,7 @@
 
 
        <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;" data-aos="fade-up">
         <div class="row pt-5">
             <div class="col-lg-7 col-md-12">
                 <div class="row">
@@ -333,6 +339,7 @@
     <!-- Footer End -->
 
 
+ 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
@@ -358,6 +365,17 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS (Animate On Scroll)
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true, // whether animation should happen only once - while scrolling down
+        });
+    </script>
 </body>
 
 </html>

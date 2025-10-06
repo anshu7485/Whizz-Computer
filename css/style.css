@@ -1970,6 +1970,47 @@ pre code {
   }
 }
 
+/* Rotating icon animation for floating contact buttons */
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Reuse same linear rotation but allow different durations on hover */
+@keyframes rotate-fast {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Apply subtle rotation to icon elements inside floating buttons */
+.whatsapp-float i,
+.call-float i {
+  display: inline-block; /* allows transform */
+  animation-name: rotate-slow;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  will-change: transform;
+}
+
+/* Speed up rotation on hover/focus for a lively effect */
+.whatsapp-float:hover i,
+.whatsapp-float:focus i,
+.call-float:hover i,
+.call-float:focus i {
+  animation-name: rotate-fast;
+  animation-duration: 1.2s;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-float i,
+  .call-float i {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
 
 .form-control {
   display: block;
