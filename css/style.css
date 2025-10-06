@@ -1874,6 +1874,103 @@ pre code {
   border: 0;
 }
 
+/* Floating WhatsApp button */
+.whatsapp-float {
+  position: fixed;
+  left: 20px;
+  bottom: 90px; /* above footer/back-to-top */
+  z-index: 1050;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light);
+  background-color: #FF6600; /* WhatsApp green fallback */
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.25);
+  font-size: 22px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+/* Blend site primary color and WhatsApp green using a gradient (safe in plain CSS) */
+.whatsapp-float {
+  /* fallback solid color */
+  background-color: #FF6600;
+  /* combine theme primary and WhatsApp green for a blended look */
+  background-image: linear-gradient(135deg, var(--primary, #FF6600), #FF6600);
+  background-size: cover;
+}
+
+.whatsapp-float:hover,
+.whatsapp-float:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+  text-decoration: none;
+  outline: none;
+}
+
+/* Visible focus for keyboard users */
+.whatsapp-float:focus-visible {
+  outline: 3px solid rgba(255,255,255,0.6);
+  outline-offset: 3px;
+}
+
+/* Slightly smaller and a bit higher on very small screens */
+@media (max-width: 576px) {
+  .whatsapp-float {
+    left: 14px;
+    bottom: 110px;
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+}
+
+/* Floating Call button (stacked above WhatsApp) */
+.call-float {
+  position: fixed;
+  left: 20px;
+  /* place above the whatsapp button with a comfortable gap (24px between edges) */
+  bottom: 170px; /* stacked above whatsapp */
+  z-index: 1050;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light);
+  /* use same blended primary/WhatsApp color as the whatsapp-float */
+  background-color: #FF6600;
+  background-image: linear-gradient(135deg, var(--primary, #FF6600), #FF6600);
+  background-size: cover;
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.25);
+  font-size: 22px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+  text-decoration: none;
+}
+
+.call-float:hover,
+.call-float:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(16, 236, 9, 0.18);
+  text-decoration: none;
+  outline: none;
+}
+
+@media (max-width: 576px) {
+  .call-float {
+    left: 14px;
+    /* keep ~24px gap between edges on small screens as well */
+    bottom: 182px;
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+}
+
+
 .form-control {
   display: block;
   width: 100%;
