@@ -1987,6 +1987,55 @@ pre code {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+/* Contact page side panel, map and socials */
+.contact-side { background: #ffffff; }
+.map-wrapper { overflow: hidden; border-radius: 8px; }
+.map-wrapper .map-iframe { display:block; width:100%; height:360px; border-radius:8px; border:0; }
+.social-icons .social-link { display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; border-radius:4px; background: rgba(0,0,0,0.05); color:#333; text-decoration:none; transition:all .15s ease-in-out; }
+.social-icons .social-link i { font-size:16px; }
+.social-icons .social-link:hover { transform:translateY(-3px); box-shadow:0 6px 18px rgba(0,0,0,0.08); }
+
+/* Responsive adjustments: stack map under form on small screens */
+@media (max-width: 991.98px) {
+    .contact-side { margin-top: 10px; }
+}
+
+/* Use theme primary color for social icons background on hover */
+.social-icons .social-link:hover { background: var(--primary, #007bff); color: #fff; }
+
+/* Subtle float animation for headings/icons */
+@keyframes floatY {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+.animated-float { animation: floatY 3.2s ease-in-out infinite; }
+
+/* Ensure the right card matches height on larger screens */
+@media (min-width: 992px) {
+  .contact-form { min-height: 520px; }
+  .contact-side { min-height: 520px; padding: 28px; }
+}
+
+/* Improve card visuals for the map side */
+.contact-side { background: #fff; border: 1px solid rgba(0,0,0,0.04); box-shadow: 0 12px 30px rgba(8,15,40,0.06); }
+.contact-side h5 { font-weight:700; }
+
+/* Contact form UI tweaks */
+.contact-form .input-group { box-shadow: none; }
+.contact-form .input-group .input-group-text { border: 1px solid #e6e6e6; border-right: 0; border-radius: 6px 0 0 6px; }
+.contact-form .form-control { border-radius: 0 6px 6px 0; border-left: 0; }
+.contact-form .form-control:focus { box-shadow: 0 6px 18px rgba(0,123,255,0.08); border-color: rgba(0,123,255,0.5); }
+.contact-form .form-text.text-danger { font-size: 0.9rem; }
+.contact-form .form-text.d-none { display: none !important; }
+.contact-form .input-group .input-group-text i { width:18px; text-align:center; }
+
+/* Make the prepend icon vertically aligned for textarea */
+.input-group-prepend.align-self-start { align-self: flex-start; }
+
+/* Slightly larger send button */
+.contact-form button#sendMessageButton { min-width: 160px; }
+
 @media (prefers-reduced-motion: reduce) {
   .form-control {
     transition: none;

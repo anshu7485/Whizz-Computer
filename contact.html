@@ -111,13 +111,7 @@
                             <a href="about.html" class="nav-item nav-link">About</a>
                             <a href="course.html" class="nav-item nav-link">Courses</a>
                             <a href="teacher.html" class="nav-item nav-link">Teachers</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="blog.html" class="dropdown-item">Blog List</a>
-                                    <a href="single.html" class="dropdown-item">Blog Detail</a>
-                                </div>
-                            </div>
+                            <a href="blog.html" class="nav-item nav-link">Blog</a>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
                         <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Join Now</a>
@@ -144,39 +138,95 @@
     </div>
     <!-- Header End -->
 
-
     <!-- Contact Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5 contact-section">
         <div class="container py-5">
             <div class="text-center mb-5">
-                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Contact</h5>
-                <h1>Contact For Any Query</h1>
+                <h5 class="contact-subtitle mb-3">Contact</h5>
+                <h1 class="contact-title">Contact For Any Query</h1>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-form bg-secondary rounded p-5">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="control-group">
-                                <input type="text" class="form-control border-0 p-4" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                <p class="help-block text-danger"></p>
+            <div class="row justify-content-center align-items-stretch">
+                <!-- Left: Contact Form -->
+                <div class="col-lg-6 mb-4">
+                    <div class="my-contact-form equal-card">
+                        <form id="customContactForm" novalidate>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <div class="input-icon">
+                                        <i class="fa fa-user"></i>
+                                        <input type="text" class="custom-input" id="firstName" placeholder="First Name"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <div class="input-icon">
+                                        <i class="fa fa-user"></i>
+                                        <input type="text" class="custom-input" id="lastName" placeholder="Last Name"
+                                            required>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="control-group">
-                                <input type="email" class="form-control border-0 p-4" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                <p class="help-block text-danger"></p>
+
+                            <div class="form-group">
+                                <div class="input-icon">
+                                    <i class="fa fa-envelope"></i>
+                                    <input type="email" class="custom-input" id="email" placeholder="Email" required>
+                                </div>
                             </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control border-0 p-4" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                                <p class="help-block text-danger"></p>
+
+                            <div class="form-group">
+                                <div class="input-icon">
+                                    <i class="fa fa-phone"></i>
+                                    <input type="text" class="custom-input" id="contact" placeholder="Contact No"
+                                        required>
+                                </div>
                             </div>
-                            <div class="control-group">
-                                <textarea class="form-control border-0 py-3 px-4" rows="5" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                                <p class="help-block text-danger"></p>
+
+                            <div class="form-group">
+                                <div class="input-icon">
+                                    <i class="fa fa-pencil-alt"></i>
+                                    <input type="text" class="custom-input" id="subject" placeholder="Subject" required>
+                                </div>
                             </div>
+
+                            <div class="form-group">
+                                <div class="input-icon">
+                                    <i class="fa fa-comment"></i>
+                                    <textarea class="custom-input custom-textarea" id="message" placeholder="Message"
+                                        rows="4" required></textarea>
+                                </div>
+                            </div>
+
                             <div class="text-center">
-                                <button class="btn btn-primary py-3 px-5" type="submit" id="sendMessageButton">Send Message</button>
+                                <button type="submit" class="custom-btn">
+                                    <i class="fa fa-paper-plane mr-2"></i>Send Message
+                                </button>
                             </div>
                         </form>
+                    </div>
+                </div>
+
+                <!-- Right: Map + Contact Info -->
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-side-card equal-card">
+                        <h5 class="side-title">Our Location</h5>
+                        <div class="map-wrapper mb-3">
+                            <iframe class="map-iframe"
+                                src="https://www.google.com/maps?q=Shakarpur%20Laxmi%20Nagar%20Metro%20Station%20Delhi&amp;output=embed"
+                                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+
+                        <h6>Contact</h6>
+                        <p><i class="fa fa-phone mr-2 text-primary"></i>+91 84969 60071</p>
+                        <p><i class="fa fa-envelope mr-2 text-primary"></i>rpwhiz@gmail.com</p>
+
+                        <h6>Follow Us</h6>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -184,6 +234,155 @@
     </div>
     <!-- Contact End -->
 
+    <!-- Add CSS for input icons -->
+    <style>
+        .input-icon {
+            position: relative;
+        }
+
+        .input-icon i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #007bff;
+        }
+
+        .input-icon input,
+        .input-icon textarea {
+            padding-left: 40px;
+        }
+    </style>
+
+
+    <style>
+        /* Contact Section */
+        .contact-section {
+            background: var(--secondary);
+            font-family: var(--font-family-sans-serif);
+        }
+
+        /* Subtitle & Title */
+        .contact-subtitle {
+            color: var(--primary);
+            letter-spacing: 5px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .contact-title {
+            color: var(--dark);
+            font-weight: 700;
+        }
+
+        /* Equal Card Styling */
+        .equal-card {
+            background: var(--white);
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 500px;
+            /* ensures both cards equal height */
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        /* Form Styles */
+        .my-contact-form {
+            animation-name: slideInLeft;
+        }
+
+        .custom-input {
+            width: 100%;
+            padding: 14px 20px;
+            margin-bottom: 18px;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+            transition: all 0.3s;
+        }
+
+        .custom-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 12px rgba(255, 102, 0, 0.25);
+            outline: none;
+        }
+
+        .custom-textarea {
+            resize: none;
+        }
+
+        .custom-btn {
+            background: var(--primary);
+            color: var(--white);
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .custom-btn:hover {
+            background: var(--orange);
+            transform: translateY(-3px);
+        }
+
+        /* Right Side Card */
+        .contact-side-card {
+            animation-name: slideInRight;
+        }
+
+        .side-title {
+            color: var(--primary);
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        .map-wrapper iframe {
+            width: 100%;
+            height: 220px;
+            border-radius: 12px;
+            border: none;
+        }
+
+        .social-icons a {
+            color: var(--primary);
+            font-size: 18px;
+            margin-right: 12px;
+            transition: all 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: var(--orange);
+            transform: translateY(-3px);
+        }
+
+        /* Animations */
+        @keyframes slideInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
@@ -192,34 +391,42 @@
                 <div class="row">
                     <div class="col-md-6 mb-5">
                         <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Get In Touch</h5>
-                        <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>U-179, Upadhyay Block, Shakarpur Near Laxmi Nagar
+                            Metro Station Delhi 110092.</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+918496960071</p>
+                        <p><i class="fa fa-envelope mr-2"></i>rpwhiz@gmail.com</p>
                         <div class="d-flex justify-content-start mt-4">
                             <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-square mr-2" href="#"><i
+                                    class="fab fa-linkedin-in"></i></a>
                             <a class="btn btn-outline-light btn-square" href="#"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                     <div class="col-md-6 mb-5">
                         <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Our Courses</h5>
                         <div class="d-flex flex-column justify-content-start">
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Web Design</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Apps Design</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Marketing</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Research</a>
-                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>SEO</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Web
+                                Development</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Cyber Security</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Digital
+                                Marketing</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Graphic
+                                Designing</a>
+                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Computer Courses</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-5 col-md-12 mb-5">
                 <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Newsletter</h5>
-                <p>Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum sea tempor magna tempor. Accu kasd sed ea duo ipsum. Dolor duo eirmod sea justo no lorem est diam</p>
+                <p>Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum sea tempor magna tempor. Accu
+                    kasd sed ea duo ipsum. Dolor duo eirmod sea justo no lorem est diam</p>
                 <div class="w-100">
                     <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
+                        <input type="text" class="form-control border-light" style="padding: 30px;"
+                            placeholder="Your Email Address">
                         <div class="input-group-append">
                             <button class="btn btn-primary px-4">Sign Up</button>
                         </div>
@@ -228,12 +435,16 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
+        style="border-color: rgba(256, 256, 256, .1) !important;">
         <div class="row">
             <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white">&copy; <a href="#">Domain Name</a>. All Rights Reserved. Designed by <a href="https://htmlcodex.com">HTML Codex</a>
+                <p class="m-0 text-white">
+                    &copy; <a href="#">Whizz Computer</a>. All Rights Reserved. Designed by
+                    <a href="#">Raushan Kumar</a>
                 </p>
             </div>
+
             <div class="col-lg-6 text-center text-md-right">
                 <ul class="nav d-inline-flex">
                     <li class="nav-item">
@@ -258,6 +469,15 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918496960071" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Call Floating Button -->
+    <a href="tel:+918496960071" class="call-float" aria-label="Call us">
+        <i class="fa fa-phone"></i>
+    </a>
+
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -271,6 +491,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+   
 </body>
 
 </html>

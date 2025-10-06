@@ -20,6 +20,8 @@
 
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- AOS Animate On Scroll -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -27,7 +29,7 @@
 
 <body>
     <!-- Topbar Start -->
-    <div class="container-fluid d-none d-lg-block">
+    <div class="container-fluid d-none d-lg-block" data-aos="fade-down">
         <div class="row align-items-center py-4 px-xl-5">
             <div class="col-lg-3">
                 <a href="" class="text-decoration-none">
@@ -67,7 +69,7 @@
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid">
+    <div class="container-fluid" data-aos="fade-down" data-aos-delay="100">
         <div class="row border-top px-xl-5">
             <div class="col-lg-3 d-none d-lg-block">
                 <a class="d-flex align-items-center justify-content-between bg-secondary w-100 text-decoration-none"
@@ -111,13 +113,7 @@
                             <a href="about.html" class="nav-item nav-link">About</a>
                             <a href="course.html" class="nav-item nav-link">Courses</a>
                             <a href="teacher.html" class="nav-item nav-link">Teachers</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="blog.html" class="dropdown-item">Blog List</a>
-                                    <a href="single.html" class="dropdown-item">Blog Detail</a>
-                                </div>
-                            </div>
+                            <a href="blog.html" class="nav-item nav-link">Blog</a>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
                         <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Join Now</a>
@@ -142,11 +138,11 @@
                     <img class="position-relative w-100" src="img/carousel-1.jpg"
                         style="min-height: 300px; object-fit: cover;">
                     <div class="carousel-caption d-flex align-items-center justify-content-center">
-                        <div class="p-5" style="width: 100%; max-width: 900px;">
-                            <h5 class="text-white text-uppercase mb-md-3">Best Online Courses</h5>
-                            <h1 class="display-3 text-white mb-md-4">Best Education From Your Home</h1>
-                            <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a>
-                        </div>
+                                <div class="p-5" style="width: 100%; max-width: 900px;" data-aos="zoom-in">
+                                    <h5 class="text-white text-uppercase mb-md-3">Best Online Courses</h5>
+                                    <h1 class="display-3 text-white mb-md-4">Best Education From Your Home</h1>
+                                    <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a>
+                                </div>
                     </div>
                 </div>
                 <div class="carousel-item" style="min-height: 300px;">
@@ -178,13 +174,13 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" data-aos="fade-up">
         <div class="container py-5">
             <div class="row align-items-center">
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-right">
                     <img class="img-fluid rounded mb-4 mb-lg-0" src="img/about.jpg" alt="">
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-7" data-aos="fade-left">
                     <div class="text-left mb-4">
                         <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">About Us</h5>
                         <h1>Innovative Way To Learn</h1>
@@ -204,14 +200,14 @@
 
 
     <!-- Category Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" data-aos="fade-up">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-5">
                 <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Subjects</h5>
                 <h1>Explore Top Subjects</h1>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in">
                     <div class="cat-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="img/cat-1.jpg" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
@@ -220,7 +216,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in">
                     <div class="cat-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="img/cat-2.jpg" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
@@ -229,7 +225,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in">
                     <div class="cat-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="img/cat-3.jpg" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
@@ -238,7 +234,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in">
                     <div class="cat-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="img/cat-4.jpg" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
@@ -247,7 +243,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in">
                     <div class="cat-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="img/cat-5.jpg" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
@@ -256,7 +252,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in">
                     <div class="cat-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="img/cat-6.jpg" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
@@ -265,7 +261,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="zoom-in">
                     <div class="cat-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="img/cat-7.jpg" alt="">
                         <a class="cat-overlay text-white text-decoration-none" href="">
@@ -290,14 +286,14 @@
 
 
     <!-- Courses Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" data-aos="fade-up">
         <div class="container py-5">
             <div class="text-center mb-5">
                 <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Courses</h5>
                 <h1>Our Popular Courses</h1>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
                     <div class="rounded overflow-hidden mb-2">
                         <img class="img-fluid" src="img/course-1.jpg" alt="">
                         <div class="bg-secondary p-4">
@@ -316,7 +312,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
                     <div class="rounded overflow-hidden mb-2">
                         <img class="img-fluid" src="img/course-2.jpg" alt="">
                         <div class="bg-secondary p-4">
@@ -335,7 +331,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
                     <div class="rounded overflow-hidden mb-2">
                         <img class="img-fluid" src="img/course-3.jpg" alt="">
                         <div class="bg-secondary p-4">
@@ -354,7 +350,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
                     <div class="rounded overflow-hidden mb-2">
                         <img class="img-fluid" src="img/course-4.jpg" alt="">
                         <div class="bg-secondary p-4">
@@ -373,7 +369,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
                     <div class="rounded overflow-hidden mb-2">
                         <img class="img-fluid" src="img/course-5.jpg" alt="">
                         <div class="bg-secondary p-4">
@@ -392,7 +388,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
                     <div class="rounded overflow-hidden mb-2">
                         <img class="img-fluid" src="img/course-6.jpg" alt="">
                         <div class="bg-secondary p-4">
@@ -418,10 +414,10 @@
 
 
     <!-- Registration Start -->
-    <div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
+    <div class="container-fluid bg-registration py-5" style="margin: 90px 0;" data-aos="fade-up">
         <div class="container py-5">
             <div class="row align-items-center">
-                <div class="col-lg-7 mb-5 mb-lg-0">
+                <div class="col-lg-7 mb-5 mb-lg-0" data-aos="fade-right">
                     <div class="mb-4">
                         <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Need Any Courses</h5>
                         <h1 class="text-white">30% Off For New Students</h1>
@@ -438,7 +434,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-left">
                     <div class="card border-0">
                         <div class="card-header bg-light text-center p-4">
                             <h1 class="m-0">Sign Up Now</h1>
@@ -456,9 +452,9 @@
                                 <div class="form-group">
                                     <select class="custom-select border-0 px-4" style="height: 47px;">
                                         <option selected>Select a course</option>
-                                        <option value="1">Course 1</option>
-                                        <option value="2">Course 1</option>
-                                        <option value="3">Course 1</option>
+                                        <option value="1">Web Development</option>
+                                        <option value="2">Cyber Security</option>
+                                        <option value="3">Graphic Design</option>
                                     </select>
                                 </div>
                                 <div>
@@ -476,14 +472,14 @@
 
 
     <!-- Team Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" data-aos="fade-up">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-5">
                 <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Teachers</h5>
                 <h1>Meet Our Teachers</h1>
             </div>
             <div class="row">
-                <div class="col-md-6 col-lg-3 text-center team mb-4">
+                <div class="col-md-6 col-lg-3 text-center team mb-4" data-aos="flip-left">
                     <div class="team-item rounded overflow-hidden mb-2">
                         <div class="team-img position-relative">
                             <img class="img-fluid" src="img/team-1.jpg" alt="">
@@ -502,7 +498,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 text-center team mb-4">
+                <div class="col-md-6 col-lg-3 text-center team mb-4" data-aos="flip-left">
                     <div class="team-item rounded overflow-hidden mb-2">
                         <div class="team-img position-relative">
                             <img class="img-fluid" src="img/team-2.jpg" alt="">
@@ -521,7 +517,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 text-center team mb-4">
+                <div class="col-md-6 col-lg-3 text-center team mb-4" data-aos="flip-left">
                     <div class="team-item rounded overflow-hidden mb-2">
                         <div class="team-img position-relative">
                             <img class="img-fluid" src="img/team-3.jpg" alt="">
@@ -540,7 +536,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 text-center team mb-4">
+                <div class="col-md-6 col-lg-3 text-center team mb-4" data-aos="flip-left">
                     <div class="team-item rounded overflow-hidden mb-2">
                         <div class="team-img position-relative">
                             <img class="img-fluid" src="img/team-4.jpg" alt="">
@@ -566,14 +562,14 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" data-aos="fade-up">
         <div class="container py-5">
             <div class="text-center mb-5">
                 <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Testimonial</h5>
                 <h1>What Say Our Students</h1>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-8">
+                <div class="col-lg-8" data-aos="fade-up">
                     <div class="owl-carousel testimonial-carousel">
                         <div class="text-center">
                             <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
@@ -611,14 +607,14 @@
 
 
     <!-- Blog Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5" data-aos="fade-up">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-5">
                 <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Our Blog</h5>
                 <h1>Latest From Our Blog</h1>
             </div>
             <div class="row pb-3">
-                <div class="col-lg-4 mb-4">
+                <div class="col-lg-4 mb-4" data-aos="fade-up">
                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="img/blog-1.jpg" alt="">
                         <a class="blog-overlay text-decoration-none" href="">
@@ -628,7 +624,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-4">
+                <div class="col-lg-4 mb-4" data-aos="fade-up">
                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="img/blog-2.jpg" alt="">
                         <a class="blog-overlay text-decoration-none" href="">
@@ -638,7 +634,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-4">
+                <div class="col-lg-4 mb-4" data-aos="fade-up">
                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="img/blog-3.jpg" alt="">
                         <a class="blog-overlay text-decoration-none" href="">
@@ -655,15 +651,16 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;" data-aos="fade-up">
         <div class="row pt-5">
             <div class="col-lg-7 col-md-12">
                 <div class="row">
                     <div class="col-md-6 mb-5">
                         <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Get In Touch</h5>
-                        <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>U-179, Upadhyay Block, Shakarpur Near Laxmi Nagar
+                            Metro Station Delhi 110092.</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+918496960071</p>
+                        <p><i class="fa fa-envelope mr-2"></i>rpwhiz@gmail.com</p>
                         <div class="d-flex justify-content-start mt-4">
                             <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-square mr-2" href="#"><i
@@ -676,11 +673,14 @@
                     <div class="col-md-6 mb-5">
                         <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Our Courses</h5>
                         <div class="d-flex flex-column justify-content-start">
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Web Design</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Apps Design</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Marketing</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Research</a>
-                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>SEO</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Web
+                                Development</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Cyber Security</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Digital
+                                Marketing</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Graphic
+                                Designing</a>
+                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Computer Courses</a>
                         </div>
                     </div>
                 </div>
@@ -705,10 +705,12 @@
         style="border-color: rgba(256, 256, 256, .1) !important;">
         <div class="row">
             <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white">&copy; <a href="#">Domain Name</a>. All Rights Reserved. Designed by <a
-                        href="https://htmlcodex.com">HTML Codex</a>
+                <p class="m-0 text-white">
+                    &copy; <a href="#">Whizz Computer</a>. All Rights Reserved. Designed by
+                    <a href="#">Raushan Kumar</a>
                 </p>
             </div>
+
             <div class="col-lg-6 text-center text-md-right">
                 <ul class="nav d-inline-flex">
                     <li class="nav-item">
@@ -734,11 +736,11 @@
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/911234567890" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/918496960071" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
     <!-- Call Floating Button -->
-    <a href="tel:+911234567890" class="call-float" aria-label="Call us">
+    <a href="tel:+918496960071" class="call-float" aria-label="Call us">
         <i class="fa fa-phone"></i>
     </a>
 
@@ -748,6 +750,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
@@ -755,6 +759,16 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        // Initialize AOS (Animate On Scroll)
+        if (typeof AOS !== 'undefined') {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+        }
+    </script>
 </body>
 
 </html>
